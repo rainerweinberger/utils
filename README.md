@@ -1,2 +1,3 @@
 # utils
-python library for all kinds of useful stuff
+python library for all kind of useful stuff
+

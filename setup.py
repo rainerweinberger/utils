@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="utils",
+    name="myutils",
     version="0.0.1",
     author="Rainer Weinberger",
     license="GNU General Public License v3 (GPLv3)",

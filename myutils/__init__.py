@@ -23,7 +23,7 @@ def print_copyright():
     prints copyright for physics module
     :return:
     """
-    cpyright = "This is a physics package for python\n"\
+    cpyright = "This is a utilities package for python\n"\
                "Copyright (C) 2020  Rainer Weinberger\n"\
                "\n"\
                "This program is free software: you can redistribute it and/or modify\n"\

@@ -17,6 +17,7 @@
 # along with physics.  If not, see <https://www.gnu.org/licenses/>.
 
 from subprocess import call
+import os
 
 
 def make_movie(figures: str = './fig_%03d.png',
@@ -28,4 +29,10 @@ def make_movie(figures: str = './fig_%03d.png',
         note that it forces removing filename!
     """
     call(['rm', '-rf', filename])
+
+    # todo: refactor
+    filedir = os.path.dirname(filename)
+    if not os.path.exists(filedir):
+        os.makedirs(filedir)
+
     return call(['ffmpeg', '-r', str(r), '-i', figures, '-pix_fmt', pix_fmt, filename])

@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with physics.  If not, see <https://www.gnu.org/licenses/>.
 
+import numpy as np
 
 class HealPix:
     """
@@ -27,7 +28,7 @@ class HealPix:
         self.cache_z = {}
         self.cache_phi = {}
 
-    def get_HEALPix(self, N_side):
+    def get_healpix(self, N_side):
         if N_side in self.cache_z.keys() and N_side in self.cache_phi.keys():
             return self.cache_z[N_side], self.cache_phi[N_side]
         else:
@@ -36,7 +37,7 @@ class HealPix:
             self.cache_phi.update({N_side: phi})
             return z, phi
 
-    def HEALPix(self, N_side, z=None, phi=None):
+    def healpix(self, N_side, z=None, phi=None):
         ## HEALPix tesslation
         N_pix = 12 * N_side * N_side
         if z == None:

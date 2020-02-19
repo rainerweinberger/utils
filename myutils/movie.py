@@ -35,5 +35,4 @@ def make_movie(figures: str = './fig_%03d.png',
     if not os.path.exists(filedir):
         os.makedirs(filedir)
 
-    return call(['ffmpeg', '-r', str(r), '-i', figures, '-pix_fmt', pix_fmt, '-vf', '"pad=ceil(iw/2)*2:ceil(ih/2)*2"',
-                 filename])
+    return call(['ffmpeg', '-r', str(r), '-i', figures, '-pix_fmt', pix_fmt, filename])

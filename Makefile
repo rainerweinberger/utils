@@ -7,4 +7,4 @@ local:
 	python setup.py install --user
 
 test:
-	python -m pytest --cov-report html --cov=physics --cov-branch tests
+	python -m pytest --cov-report html --cov=myutils --cov-branch tests

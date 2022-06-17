@@ -1,7 +1,7 @@
 #! utils/movie.py
 #
 # This file is part of utils.
-# Copyright (C) 2020  Rainer Weinberger (rainer.weinberger@cfa.harvard.edu)
+# Copyright (C) 2020-2022  Rainer Weinberger (rainer.weinberger@cfa.harvard.edu)
 #
 # Physics is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -30,7 +30,6 @@ def make_movie(figures: str = './fig_%03d.png',
     """
     call(['rm', '-rf', filename])
 
-    # todo: refactor
     filedir = os.path.dirname(filename)
     if not os.path.exists(filedir):
         os.makedirs(filedir)

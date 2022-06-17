@@ -1,2 +1,7 @@
 *.pyc
+.*
+build
+myutils-*
+myutils.egg*
+coverage.xml
 .pytest_cache
